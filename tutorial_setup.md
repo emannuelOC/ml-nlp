@@ -1,4 +1,4 @@
-Setting Machine for Deep Learning
+# Setting Machine for Deep Learning
 
 ## Ambiente 
 
