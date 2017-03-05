@@ -81,7 +81,17 @@ informações dos itens anteriores possam influenciar os itens seguintes. As RNN
 já existem há muito tempo (referência), mas o seu sucesso nos trabalhos mais recentes 
 está geralmente associado às LSTMs.
 
-<limitações das RNNs; como as LSTMs ajudam> 
+Embora teoricamente as RNNs sejam capazes de guardar informações por um longo espaço
+de tempo, na prática isso se mostrou uma limitação das RNNs (citação Bengio 1994).
+A Long Term Short Memory permite que as informações sejam guardadas por um longo 
+período de tempo. A cada item que passa pela rede, algumas informações podem ser
+armazenadas para uso posterior, outras podem ser desprezadas e as informações
+que estão guardadas (de passagens anteriores) podem influenciar a saída da rede.
+
+O uso de LSTM com RNNs tem permitido um grande progresso em diversos domínios da
+Aprendizagem de Máquina (exemplos...).
+
+## NLP e Representação
 
 
 
