@@ -74,6 +74,14 @@ Embora o conceito de uma rede com várias camadas já tivesse sido considerado d
 a década de 1980, o uso de _backpropagation_ com esse tipo de rede só se tornou 
 possível na prática a partir da década de 2000 com o surgimento das GPUs.
 
+As redes neurais recorrentes são uma arquitetura importante para o processamento de
+dados sequenciais, como audio ou linguagem natural. Nesse tipo de rede, há um loop da
+saída da rede para a entrada na análise do próximo item da sequência, permitindo que
+informações dos itens anteriores possam influenciar os itens seguintes. As RNNs 
+já existem há muito tempo (referência), mas o seu sucesso nos trabalhos mais recentes 
+está geralmente associado às LSTMs.
+
+<limitações das RNNs; como as LSTMs ajudam> 
 
 
 
