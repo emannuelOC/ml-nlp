@@ -36,3 +36,50 @@ nas RNA, existem unidades computacionais relativamente simples que são ligadas
 umas as outras. Assim como no SNC, a atividade de uma dessas unidades 
 influencia a atividades das unidades às quais ela está ligada.
 
+Basicamente, um modelo de rede neural artificial pode ser representado como
+um grafo que tem suas unidades (neurônios) distribuídas em camadas. 
+A primeira camada, de input recebe os respectivos estímulos a 
+partir dos dados de entrada. Os neurônios dessa camada exercem
+influência nos neurônios da camada seguinte até que se chegue à última
+camada - output. A influência de um neurônio sobre o próximo é modulada por meio 
+de pesos, que são valores relacionados a cada aresta no grafo. Para calcular
+o valor que um neurônio passará aos neurônios da camada seguinte dois conceitos
+são importantes: o _bias_ e a _função de ativação_. 
+O _bias_ é o valor que será subtraído do somatório de ativações dos neurônios
+que estão ligados a ele e está relacionado ao limiar de ativação dos neurônios
+no SNC. A função de ativação é a transformação que uma dada unidade fará com 
+o valor resultante do somatório dos valores das ativações dos neurônios da
+camada anterior multiplicados com os respectivos pesos e subtraído do _bias_.
+
+O processo de aprendizagem de uma rede pode ser entendido como a sucessiva 
+atualização dos pesos de modo que se chegue aos valores que permitam prever
+melhor o output para um input inédito. Esse processo ocorre por meio da
+iteração sobre um conjunto de dados de treino. Os pesos são inicializados
+aleatóriamente (entre outras maneiras possíveis) e o primeiro dado é "inputado"
+na rede, que passa os estímulos de uma camada à outra até o output. O output 
+gerado pela rede é então comparado ao resultado esperado por meio de uma função 
+de custo e com base nessa função os pesos são atualizados para a próxima iteração
+até que se obtenha a configuração de pesos ótima.
+
+A atualização dos pesos da rede, que é o centro do processo de aprendizagem, se 
+dá por meio do algoritmo de _backpropagation_. Esse algoritmo parte da função de
+custo e atualiza cada peso com base no gradiente da função de custo, de modo a
+minimizar o erro para a próxima iteração. O quanto cada peso será atualizado é
+controlado pelo _learning rate_.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
