@@ -2,7 +2,7 @@
 
 * Redes neurais e backpropagation
 * LSTM, Deep learning e RNN
-* Representação (word2vec)
+* NLP e Representação (word2vec)
 
 ## Redes neurais 
 
@@ -67,6 +67,12 @@ custo e atualiza cada peso com base no gradiente da função de custo, de modo a
 minimizar o erro para a próxima iteração. O quanto cada peso será atualizado é
 controlado pelo _learning rate_.
 
+## Deep Learning, RNN e LSTM
+
+_Deep Learning_ é o nome dado a uma rede neural que contenha "muitas" camadas.
+Embora o conceito de uma rede com várias camadas já tivesse sido considerado desde 
+a década de 1980, o uso de _backpropagation_ com esse tipo de rede só se tornou 
+possível na prática a partir da década de 2000 com o surgimento das GPUs.
 
 
 
