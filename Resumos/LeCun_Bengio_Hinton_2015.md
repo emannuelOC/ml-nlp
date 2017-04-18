@@ -31,4 +31,18 @@ As pessoas em geral usam um procedimento chamado _stochastic gradient descent_ (
 
 ## Backpropagation to train multilayer architectures
 
+Desde o começo do reconhecimento de padrões, a ideia era substituir as features "feitas à mão" por redes treináveis, mas a solução não foi amplamente entendida até o meio dos anos 1980. As arquiteturas com múltiplas camadas pode ser treinada com gradiente descendente estocástico usando backpropagation.
 
+O procedimento de backpropagation para calcular o gradiente de uma função objetivo em relação aos pesos de uma pilha de módulos é a regra da cadeia para derivadas aplicada na prática. A ideia é que a derivada (ou gradiente) da função objetivo com relação ao input de um módulo pode ser computada de trás pra frente a partir do gradiente com relação ao output daquele módulo (ou o input do módulo seguinte). A equação de backpropagation pode ser aplicada repetidamente por todos os módulos, começando pelo output da rede até o input.
+
+Várias aplicações de deep learning usam redes neurais _feed forward_, que aprendem a mapear um input de tamanho fixo a um output de tamanho fixo. Para ir de uma camada para a próxima, um conjunto de unidades computa uma soma ponderada dos seus inputs recebidos da camada anterior através de uma função não linear (a mais popular é a ReLU: `f(x) = 0, se x < 0; f(x) = x se x >= 0`). Outras funções também utilizadas são a `tanh` (tangente hiperbólica) e a função sigmóide (`f(x) = 1/(1 + exp(-x))`).
+
+Unidades que não são nem input nem output são chamadas de _hidden units_ (unidades escondidas).
+
+No fim dos anos 1990, as redes neurais e backpropagation foram esquecidos pela comunidade de visão computacional e reconhecimento de voz. Pensava-se que o gradiente descendente ficaria preso em _local minima_ (pontos da função com derivada zero mas que não seriam o mínimo global). Na prática, mínimos locais raramente são um problema para as redes neurais.
+
+O interesse por redes neurais "profundas" (deep) cresceu novamente em 2006, quando um grupo no Canadá introduziu aprendizado não supervisionado no processo de pré-treino para criar detectores de features a partir de dados sem labels. Isso funcionou muito bem para reconhecer caracteres escritos à mão e para detectar pedestres.
+
+A primeira grande aplicação desse método foi para reconhecimento de voz e só foi possível pelo uso de GPUs. Em 2012, versões dessa rede estavam sendo desenvolvidas por vários do grande grupos de reconhecimento de voz e já estava em uso em telefones Android.
+
+## Convolutional neural networks
