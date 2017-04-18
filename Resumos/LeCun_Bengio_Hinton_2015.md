@@ -1,6 +1,6 @@
 # Resumão - LeCun, Bengio, Hinton (2015)
 
-## Abastract:
+## Abstract:
 
 - Deep learning permite que modelos computacionais compostos de múltiplas camadas _aprendam representações de dados_ com vários múltiplos de abstração;
 - Esses métodos melhoraram o estado da arte em várias áreas;
@@ -21,5 +21,14 @@ O aspecto chave do deep learning é que essas camadas de features *não são pro
 
 O deep learning tem feito vários avanços em problemas que desafiaram por anos a comunidade de inteligência artificial. E os autores acreditam que o deep learning terá ainda vários outros sucessos no futuro.
 
-## Supervised learning
+## Supervised learning (aprendizado supervisionado)
+
+A forma mais comum de machine learning (deep ou não) é o aprendizado supervisionado. Coleta-se um grande conjunto de dados classificados e, durante o treino, apresenta-se à máquina os dados com as suas classificações. A ideia é que a máquina dê o maior score para a classe desejada. Nós computamos uma função que mede o erro (ou a distância entre a classificação dada pela máquina e o que era esperado). A máquina então ajusta os seus parâmetros internos para reduzir esse erro. Esses parâmetros ajustados são geralmente chamados de "pesos" e são números reais que definem a função input-output. Podem haver centenas de milhões desses parâmetros e centenas de milhões de exemplos para treinar a máquina.
+
+Para ajustar os erros corretamente, o algoritmo de aprendizado computa um vetor gradiente que, para cada peso, indica quanto o erro aumentaria ou diminuiria se o peso aumentasse um pouquinho. O peso então é ajustado na direção oposta a esse vetor.
+
+As pessoas em geral usam um procedimento chamado _stochastic gradient descent_ (SDG), que consiste em mostrar o vetor de input para somente alguns exemplos, computando os outputs e erros e ajustando os pesos de acordo com o resultado. Depois do treino, a performance do sistema é medida em um conjunto de dados diferente chamado _test set_. O _test set_ serve pra testar a generalização da máquina (porque pode ser que ela funcione muito bem para o conjunto de treino, mas *só para ele*).
+
+## Backpropagation to train multilayer architectures
+
 
