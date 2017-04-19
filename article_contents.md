@@ -37,6 +37,10 @@ Um alternativa às representações discretas é a ideia de poder codificar a se
 
 O word2vec é um modelo que representa as palavras como vetores que são capazes de prever entre uma palavra e seu contexto. A ideia é atualizar os vetores de cada palavra até que seja possível prever uma palavra que acontece no contexto de uma palvra central, ou prever uma palavra central para um dado contexto. Há, portanto, uma função J(θ) e o objetivo do word2vec é minimizar essa função.
 
+### Skip-gram
+
+### CBOW
+
 // ...
 
 ## GloVe
