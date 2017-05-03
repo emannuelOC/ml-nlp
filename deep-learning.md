@@ -3,7 +3,7 @@
 - [x] A presença de Machine Learning nas diferentes áreas
 - [x] Dificuldade de criar sistemas com representações e extração de features
 - [x] _Deep learning_ como um tipo de _representation learning_ (hierarquia, abstração, etc.)
-- [ ] Backpropagation
+- [x] Backpropagation
 - [ ] CNNs e RNNs
 
 _Machine learning_ está presente em muitos dos sistemas com os quais nós interagimos no nosso dia-a-dia. Os sistemas de busca na internet, o reconhecimento de amigos em fotos nas redes sociais e a interface de voz no celular são exemplos disso. Boa parte desses sistemas fazem uso de um tipo de técnicas que vem sendo chamado de _deep learning_.
@@ -23,6 +23,11 @@ O grande desafio na área de _machine learning_ se torna conseguir dados suficie
 
 A partir dos dados _raw_, cada camada de uma rede de deep learning é capaz de aprender representações cada vez mais abstratas dos dados de modo a ressaltar características que sejam relevantes enquanto despreza variações que não alteram o resultado. Por exemplo, para reconhecer a foto de um cachorro, as camadas mais inferiores da rede aprenderão a identificar bordas; camadas mais superiores irão aprender a identificar, a partir da representação gerada pelas camadas anteriores - que já terão identificado as bordas da imagem -, formas e padrões relevantes, enquanto desprezam pequenas variações de tamanho ou localização; alguma camada mais acima será capaz de, a partir dos padrões e formas identificadas anteriormente, identificar os olhos ou o focinho do cachorro. Estas diferentes representações vão se tornando cada vez mais abstratas, de modo que a camada de output seja capaz de identificar se há ou não um cachorro na imagem.
 
+Um sistema de deep learning é uma rede neural artificial, ou seja, possui um número de unidades (neurônios) dispostos em camadas. Cada neurônio em uma camada está ligado aos neurônios da camada seguinte e esta ligação tem um valor chamado _peso_ que determina a intensidade com a qual a ativação de um neurônio deve influenciar a ligação do neurônio seguinte. Um neurônio recebe as várias ativações dos neurônios que estão ligados a ele multiplicadas pelos respectivos pesos. Essa soma é então transformada por uma _função de ativação_ (em geral a ReLU, mas outras funções possíveis são a tangente hiperbólica e a função logística) e o valor resultante será a ativação que este neurônio passará aos neurônios aos quais estiver ligado.
+
+A maioria das aplicações de _deep learning_ utilizam aprendizado supervisionado. Nesse tipo de aprendizado, o sistema é treinado com um grande número de exemplos já classificados. Os pesos da rede são inicializados aleatoriamente. Cada exemplo do conjunto de treinamento é composto por uma entrada semelhante à que o sistema deverá classificar posteriormente e o alvo, ou resposta certa. O sistema processa a entrada por meio das ativações dos neurônios até que uma resposta seja gerada na camada de output. O sistema vai sendo exposto a cada exemplo do conjunto de treino e, à medida que os dados vão sendo apresentados, é calculado um erro a partir da diferença entre o resultado dado pelo sistema e o resultado esperado. O processo de aprendizado pode ser definido como um problema de otimização em que a função de erro deve ser minimizada.
+
+Para minimizar a função objetivo, utiliza-se o Gradiente Descendente. A partir do erro calculado e do derivada parcial de cada peso da camada de output, é possível calcular em que direção cada peso deve ser atualizado para caminhar na direção do mínimo global da função de erro. Este mesmo processo é repetido para a camada anterior e assim por diante até atualizar todos os pesos da rede. A este processo de atualização sucessiva dos pesos até que se minimize a função de erro é dado o nome de _backpropagation_, uma vez que o erro é propagado a partir da camada de output para as camadas anteriores e é basicamente uma aplicação prática da regra da cadeia para as derivadas.
 
 
 
