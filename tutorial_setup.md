@@ -47,11 +47,9 @@ Nós instalaremos o seguinte:
 * numpy
 * matplotlib
 * scipy
-* scikit-learn
 * tensorflow
 * Theano
 * Keras
-* h5py
 
 Em geral, o comando para instalar uma ferramenta qualquer é `pip install <nome da ferramenta>`. A menos que seja necessário especificar a versão, nesse caso, você deve usar `pip install <nome da ferramenta> <versão>`.
 
@@ -59,12 +57,35 @@ Em geral, o comando para instalar uma ferramenta qualquer é `pip install <nome 
 
 Execute o comando para instalação do `jupyter`:
 
-`pip install jupyter`
+```bash
+(env1)$ pip install jupyter
+```
 
 Em seguida, faça o mesmo para as outras ferramentas.
 
-_To be continued_
 
+## CUDA
+
+O [CUDA](http://docs.nvidia.com/cuda/cuda-installation-guide-mac-os-x/index.html#axzz4f2QkMaZv) é a ferramenta que usamos para aproveitarmos a capacidade da GPU para aumentar a performance computacional nas aplicações de Deep Learning.
+
+Para podermos usar o CUDA, é necessário:
+
+* Um GPU que permita o uso (em geral, as GPUs da Nvidia);
+* macOS 10.11 ou superior
+* Clang e toolchain instaladas usando Xcode
+* NVIDIA CUDA ToolKit, disponível para download [aqui](https://developer.nvidia.com/cuda-downloads)
+
+Para verificar se você tem a toolchain instalada, execute o seguinte comando:
+
+```bash
+$ /usr/bin/cc --version
+```
+
+Caso não esteja instalado, instale primeiro o Xcode pela App Store. Em seguir, execute o seguinte comando para instalar a toolchain:
+
+```bash
+$ xcode-select --install
+```
 
 
 

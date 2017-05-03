@@ -1,4 +1,4 @@
-# Proposta de conteúdo para o artigo
+<!--# Proposta de conteúdo para o artigo
 
 * Redes Neurais Artificiais
 * Deep Learning
@@ -9,7 +9,25 @@
 * Word2Vec
 * GloVe
 * Comparativo
-* Aplicação (análise de sentimento)
+* Aplicação (análise de sentimento)-->
+
+# Reunião 19/04
+
+## Poster
+
+* Poster menor
+* Pensar no modelo
+
+## Manual instalações
+
+* Colocar a última versão pras dependências
+* Explicitar arquitetura (mac, linux, etc)
+* Data
+* Pip para começar (antes das outras)
+* Testar se está instalado
+* Ver manual do Bonlee
+* exemplo de uso (desde caminhar até o diretório, ativar um ambiente, etc.)
+
 
 # Proposta para o poster
 
@@ -46,3 +64,17 @@ O word2vec é um modelo que representa as palavras como vetores que são capazes
 ## GloVe
 
 // ...
+
+## Comparação
+
+// resumo das descrições acima salientando as diferenças
+
+### Avaliação intrínseca 
+
+// dados de analogia do google
+
+### Avaliação extrínseca
+
+// alguma task de nlp usando os dois e gráficos comparando
+
+// na aula eles falaram que Análise de sentimento seria ruim 😞
