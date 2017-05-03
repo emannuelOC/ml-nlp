@@ -56,11 +56,11 @@ Entretanto, foi provado teórica e praticamente que as RNNs não são capazes de
 
 
 ## Referências
-[1] LeCun, Bengio, Hinton (2015)
-[2] Rumelhart (1986)
-[3] Bottou, L. & Bousquet, O. The tradeoffs of large scale learning. In Proc. Advances in Neural Information Processing Systems 20 161–168 (2007)
-[4] LeCun,Y.etal.Handwrittendigitrecognitionwithaback-propagationnetwork. In Proc. Advances in Neural Information Processing Systems 396–404
-[5] LeCun, Y., Bottou, L., Bengio, Y. & Haffner, P. Gradient-based learning applied to document recognition. Proc. IEEE 86, 2278–2324 (1998).
-[6] Socher, R., Lin, C. C-Y., Manning, C. & Ng, A. Y. Parsing natural scenes andnatural language with recursive neural networks. In Proc. InternationalConference on Machine Learning 129–136 (2011)
-[7] Bengio, Y., Simard, P. & Frasconi, P. Learning long-term dependencies withgradient descent is difficult. IEEE Trans. Neural Networks 5, 157–166 (1994).
-[8] Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural Comput. 9,1735–1780 (1997)
+- [1] LeCun, Bengio, Hinton (2015)
+- [2] Rumelhart (1986)
+- [3] Bottou, L. & Bousquet, O. The tradeoffs of large scale learning. In Proc. Advances in Neural Information Processing Systems 20 161–168 (2007)
+- [4] LeCun,Y.etal.Handwrittendigitrecognitionwithaback-propagationnetwork. In Proc. Advances in Neural Information Processing Systems 396–404
+- [5] LeCun, Y., Bottou, L., Bengio, Y. & Haffner, P. Gradient-based learning applied to document recognition. Proc. IEEE 86, 2278–2324 (1998).
+- [6] Socher, R., Lin, C. C-Y., Manning, C. & Ng, A. Y. Parsing natural scenes andnatural language with recursive neural networks. In Proc. InternationalConference on Machine Learning 129–136 (2011)
+- [7] Bengio, Y., Simard, P. & Frasconi, P. Learning long-term dependencies withgradient descent is difficult. IEEE Trans. Neural Networks 5, 157–166 (1994).
+- [8] Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural Comput. 9,1735–1780 (1997)
