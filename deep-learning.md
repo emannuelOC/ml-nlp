@@ -4,7 +4,7 @@
 - [x] Dificuldade de criar sistemas com representações e extração de features
 - [x] _Deep learning_ como um tipo de _representation learning_ (hierarquia, abstração, etc.)
 - [x] Backpropagation
-- [ ] CNNs e RNNs
+- [x] CNNs e RNNs
 
 _Machine learning_ está presente em muitos dos sistemas com os quais nós interagimos no nosso dia-a-dia. Os sistemas de busca na internet, o reconhecimento de amigos em fotos nas redes sociais e a interface de voz no celular são exemplos disso. Boa parte desses sistemas fazem uso de um tipo de técnicas que vem sendo chamado de _deep learning_.
 
